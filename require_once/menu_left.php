@@ -1,4 +1,4 @@
-<?php require_once('require_once/db.php') ?>
+<?php //require_once('require_once/db.php') ?>
 <div id="menu_left">
 <table>
 <ul>

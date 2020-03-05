@@ -22,8 +22,10 @@
 <body>
 
 <?php    
+    require_once('require_once/db.php');
     require_once("require_once/menu.php"); 
     require_once("require_once/menu_left.php");
+    require_once("require_once/sideButton.php");
 ?>
 
 <div class="wrapper_article">

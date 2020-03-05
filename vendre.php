@@ -20,12 +20,12 @@
 
 </style>
 <body>
-<?php require_once('require_once/db.php') ?>
-<?php require_once("require_once/menu.php") ?>
-<?php require_once("require_once/menu_left.php") ?>
-<div id="sideButton">
-        <input src="js/webvp.js" onclick="openNav()" href="javascript:void(0);"><i class="fas fa-bars"></i>
-</div>
+<?php 
+	require_once('require_once/db.php');
+	require_once("require_once/menu.php");
+	require_once("require_once/menu_left.php"); 
+	require_once("require_once/sideButton.php");
+?>
 
 
 	<div class="site" id="contentVendre">

@@ -3,14 +3,22 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<meta charset="UTF-8">
+    <title>Jimbha</title>
+        <meta charset="UTF-8">
+        <meta HTTP-EQUIV="pragma" content="no-cache">
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/menu.css">
-	<link rel="stylesheet" href="css/menu_left.css">
-        <script type="text/javascript" src="js/recherche.js"></script>
-	<title>Jimbha</title>
+        <link rel="stylesheet" href="css/menu_left.css">
+        <link rel="stylesheet" href="css/images_grid.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <script type="text/javascript" src="js/webvp.js"></script>
+    <script type="text/javascript" src="js/recherche.js"></script>
+	
 </head>
+
+
 <style>
+    .site{margin-left:300px; margin-top:300px;}
     .wrapper_article{width:50%; height:50%; margin-left:150px; margin-top:-120px;z-index:1;position:absolute}
     .wrapper_article h2{font:10px;color:orangered}
     .wrapper2{display:flex}
@@ -20,15 +28,18 @@
     #ajoutpanier:hover {background: rgba(231, 76, 60,0.7);color: #ecf0f1;transition-duration: 0.2s;}
 </style>
 
+
 <body>
     
-<div class="site">
+
     
 <?php 
     require_once('require_once/db.php');
     require_once("require_once/menu.php"); 
     require_once("require_once/menu_left.php");
+    require_once("require_once/sideButton.php");
 ?>
+<div class="site">
 <div class="wrapper_article">
     <?php if(isset($_GET['id'])){
      $article=$pdo->query('Select * from article where id='.$_GET['id'])->fetch();

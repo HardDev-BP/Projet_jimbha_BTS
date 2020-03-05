@@ -3,9 +3,10 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<title>Jimnbha</title>
 
+<title>Jimnbha</title>
+    <meta charset="UTF-8">
+    <meta HTTP-EQUIV="pragma" content="no-cache">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/menu_left.css">
@@ -20,13 +21,13 @@
 </style>
 <body>
 
-<?php require_once('require_once/db.php') ?>
-<?php require_once("require_once/menu.php") ?>
-<?php require_once("require_once/menu_left.php") ?>
-    
-<div id="sideButton">
-    <button src="js/webvp.js" onclick="openNav()" href="javascript:void(0);"><i class="fas fa-bars"></i></button>	
-</div> 
+<?php 
+    require_once('require_once/db.php');
+    require_once("require_once/menu.php");
+    require_once("require_once/menu_left.php"); 
+    require_once("require_once/sideButton.php");
+?>
+
 
 <div class="site">
     <div class="wrapper objet">

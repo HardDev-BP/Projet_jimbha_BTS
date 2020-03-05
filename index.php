@@ -17,11 +17,9 @@
 <?php require_once('require_once/db.php') ?>
 <?php require_once("require_once/menu.php") ?>
 <?php require_once("require_once/menu_left.php") ?>
+<?php require_once("require_once/sideButton.php") ?>
 
-
-<div id="sideButton">
-        <span class="ml-3" src="js/webvp.js" onclick="openNav()" href="javascript:void(0);"><i class="fas fa-bars" style="margin: 8px;"></i>Menu</span>
-</div> <!--Fin div id="sideButton"-->
+<!--Fin div id="sideButton"-->
 
 <div id="content">
         <table>
