@@ -1,0 +1,38 @@
+#sales_pictures
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  background-color: white;
+  width: 1000px;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: solid 0.75px grey;
+}
+
+.column
+{
+  vertical-align: middle;
+  margin: 12px;
+}
+
+.column img
+{
+  padding: 0px;
+  /*margin: 6px;*/
+  vertical-align: middle;
+  height: 200px;
+  width: 200px;
+  /*border: solid 4px green;*/
+}
+
+.detail
+{
+   padding: 0px;
+   /*margin: 6px;*/
+   vertical-align: middle;
+   /*border: solid 4px green;*/
+   width: 200px;
+}
